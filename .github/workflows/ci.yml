@@ -15,8 +15,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        - name: Installing OS Dependencies
-          run: echo "Hello, World"
-
         - name: Install npm
           run: npm install
