@@ -7,6 +7,8 @@ on:
         branches:
             - main
     workflow_dispatch:
+    issues:
+        types: [opened, reopened, closed]
  
 
 jobs:
@@ -31,3 +33,9 @@ jobs:
 
         - name: Run all tests
           run: npm run test
+
+        - name: New issue found
+          run: |
+            echo "Here's an issue that just came up!"
+            echo "Issue title: ${{ github.event.issue.title }}"
+
