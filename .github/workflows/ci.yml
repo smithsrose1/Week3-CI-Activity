@@ -15,5 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+        - name: Navigate to correct directory
+          run: cd C:/Users/sm1se/Downloads/week3-cl-activity/Week3-CI-Activity
         - name: Install npm
           run: npm install
