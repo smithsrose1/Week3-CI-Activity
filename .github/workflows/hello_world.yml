@@ -4,3 +4,12 @@ on:
   push:
     branches:
       - main
+
+jobs:
+  hello:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display hello world
+        run: echo "Hello, World"
