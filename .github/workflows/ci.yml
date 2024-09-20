@@ -1,4 +1,4 @@
-name: Hello World
+name: CI Workflow
 on:
     push:
         branches:
@@ -20,7 +20,9 @@ jobs:
 
         - name: Install npm
           run: npm install
+
         - name: Build npm
           run: npm run build
+
         - name: Run all tests
           run: npm run test
